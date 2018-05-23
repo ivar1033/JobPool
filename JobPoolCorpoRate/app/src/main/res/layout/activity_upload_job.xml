@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UploadJob">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Job"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_cname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="text"
+                android:textColorHighlight="#fff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Job Id"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_jobid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Job Id"
+                android:textColorHighlight="#fff"
+                android:textSize="20dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job Type"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/sp_jobtype"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp">
+
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Job Location"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_joblocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Job Location"
+
+                android:textColorHighlight="#fff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date Of Interview"
+                android:textColor="#050505"
+                android:textSize="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="-80dp">
+
+                <TextView
+                    android:id="@+id/et_date"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+android:layout_marginLeft="80dp"
+                    android:hint="DD/MM/YY"
+                    android:inputType="date"
+                    android:textColorHighlight="#fff"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date_range_black_24dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Job Description"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"/>
+
+
+            <EditText
+                android:id="@+id/et_jobdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:hint="Job Description"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="5"
+                android:minLines="3"
+                android:scrollbars="vertical"
+                android:textSize="20dp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+             <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Experience"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"/>
+
+                <Spinner
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/sp_exp"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp">
+
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Job Qualification"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="UG"
+                    android:textColor="@color/colorPrimary"/>
+                <Spinner
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/sp_ug"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp">
+
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="PG"
+                    android:textColor="@color/colorPrimary"/>
+                <Spinner
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/sp_pg"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp">
+
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Required Skills"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"/>
+
+
+            <EditText
+                android:id="@+id/et_Skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:hint="Required Skills"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="5"
+                android:minLines="3"
+                android:scrollbars="vertical"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Salary"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_Salary"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:hint="Salary"
+                android:inputType="numberDecimal"
+                android:maxLength="2"
+                android:textColorHighlight="#fff"
+                android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lacs/Annum"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
+    </LinearLayout>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Contact Information"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"/>
+
+
+            <EditText
+                android:id="@+id/et_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:hint="Contact Information"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="5"
+                android:minLines="3"
+                android:scrollbars="vertical"
+                android:textSize="20dp" />
+
+
+
+            <Button
+                android:id="@+id/btn_uploadjob"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/buttonstylepink"
+                android:text="Post"
+                android:textColor="#fff"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

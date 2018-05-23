@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".EditProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#050505"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+
+            android:inputType="text"
+            android:textColorHighlight="#fff"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="1dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+
+                android:textSize="20dp" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date Of Birth"
+            android:textColor="#050505"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="-80dp">
+
+            <TextView
+                android:id="@+id/et_dob"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+
+                android:hint="DD/MM/YY"
+                android:inputType="date"
+                android:textColorHighlight="#fff"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date_range_black_24dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textColor="#050505"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/et_city"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="City"
+
+            android:inputType="text"
+            android:textColorHighlight="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="#050505"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="top|left"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="5"
+            android:minLines="3"
+            android:scrollbars="vertical"
+
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pin Code"
+            android:textColor="#050505"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pin Code"
+
+            android:maxLength="6"
+            android:inputType="number"
+            android:textColorHighlight="#fff"
+
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xth"
+            android:textColor="#050505"
+
+
+
+            android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_10marks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="60%"
+                android:inputType="number"
+                android:maxLength="2"
+
+                android:textColorHighlight="#fff"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+
+                android:textColor="#050505"
+
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Year"
+
+                android:textColor="#050505"
+
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+
+            <Spinner
+                android:id="@+id/sp_xsp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XIIth"
+
+
+                android:textColor="#050505"
+
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_12marks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="60%"
+
+                android:maxLength="2"
+                android:inputType="number"
+                android:textColorHighlight="#fff"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+
+                android:textColor="#050505"
+
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Year"
+
+                android:textColor="#050505"
+
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+
+            <Spinner
+                android:id="@+id/sp_xiisp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UG"
+
+
+                android:textColor="#050505"
+
+                android:textSize="20dp" />
+
+
+
+
+            <EditText
+                android:id="@+id/et_ugmarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="60%"
+
+                android:maxLength="2"
+                android:inputType="number"
+                android:textColorHighlight="#fff"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+
+                android:textColor="#050505"
+
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Year"
+
+                android:textColor="#050505"
+
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+
+            <Spinner
+                android:id="@+id/sp_ugsp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UG Course"
+                android:textColor="#050505"
+
+                android:textSize="20dp"/>
+            <Spinner
+                android:id="@+id/sp_ug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PG"
+
+
+                android:textColor="#050505"
+
+                android:textSize="20dp" />
+
+
+
+
+            <EditText
+                android:id="@+id/et_pgmarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="60%"
+
+                android:maxLength="2"
+                android:inputType="number"
+                android:textColorHighlight="#fff"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textColor="#050505"
+
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Year"
+
+                android:textColor="#050505"
+
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+
+            <Spinner
+                android:id="@+id/sp_pgsp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </Spinner>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PG Course"
+                android:textColor="#050505"
+
+                android:textSize="20dp"/>
+            <Spinner
+                android:id="@+id/sp_pg"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </Spinner>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skills"
+            android:textColor="#050505"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="top|left"
+            android:hint="Skills"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="5"
+            android:minLines="3"
+            android:scrollbars="vertical"
+
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Achievements"
+            android:textColor="#050505"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_achievement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="top|left"
+            android:hint="Achievements"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="5"
+            android:minLines="3"
+            android:scrollbars="vertical"
+
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Certifications"
+            android:textColor="#050505"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_certification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="top|left"
+            android:hint="Certifications"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="5"
+            android:minLines="3"
+            android:scrollbars="vertical"
+
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Work Experience"
+            android:textColor="#050505"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/workexp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/btn_saveprofile"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonstylepink"
+            android:text="Save"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000"/>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="*Only PDF File Size Upto 10MB"/>
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No file selected"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="upload Cv"
+            android:textColor="#fff"
+            android:background="@drawable/buttonstylepink"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000"/>
+
+        <ProgressBar
+            android:id="@+id/videoprogress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="*Only Mp4 File Size Upto 10MB"/>
+        <TextView
+            android:id="@+id/videotextViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No file selected"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/videocv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Video Cv"
+            android:textColor="#fff"
+            android:background="@drawable/buttonstylepink"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

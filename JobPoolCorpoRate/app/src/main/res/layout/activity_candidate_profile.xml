@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CandidateProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Candidate  Profile"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#3c00ff"
+                android:textSize="20dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#050505"
+                    android:textSize="30dp" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Sex"
+                android:textColor="#3c00ff"
+                android:textSize="20dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#050505"
+                    android:textSize="30dp" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#3c00ff"
+                android:textSize="20dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#050505"
+                    android:textSize="30dp" />
+
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth"
+                android:textColor="#3c00ff"
+                android:textSize="20dp"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+                <TextView
+                    android:id="@+id/tv_dob"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#050505"
+                    android:textSize="30dp" />
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textColor="#3c00ff"
+                android:textSize="20dp"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#050505"
+                    android:textSize="30dp" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="#3c00ff"
+                android:textSize="20dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:lines="4"
+                    android:maxLines="5"
+                    android:minLines="3"
+                    android:scrollbars="vertical"
+                    android:textColor="#050505"
+                    android:textSize="30dp" />
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Pin Code"
+                android:textColor="#3c00ff"
+                android:textSize="20dp"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:id="@+id/tv_pincode"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#050505"
+                    android:maxLength="6"
+                    android:textSize="30dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/ll_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xth"
+                        android:textColor="#3c00ff"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_10marks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="2"
+                        android:textColor="#050505"
+                        android:textSize="30dp"
+                        android:layout_marginLeft="30dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textColor="#3c00ff"
+
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Year"
+                        android:textColor="#3c00ff"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_10year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="4"
+                        android:textColor="#050505"
+
+                        android:textSize="30dp"
+                        android:layout_marginLeft="2dp"
+                        />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/ll_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XIIth"
+                        android:textColor="#3c00ff"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_12marks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#050505"
+                        android:maxLength="2"
+                        android:textSize="30dp"
+                        android:layout_marginLeft="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textColor="#3c00ff"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Year"
+                        android:textColor="#3c00ff"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_12year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="4"
+                        android:textColor="#050505"
+
+
+                        android:textSize="30dp"
+                        android:layout_marginLeft="2dp"
+                        />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/ug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UG"
+                        android:textColor="#3c00ff"
+                        android:textSize="20dp" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/tv_ugmarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#050505"
+                        android:maxLength="2"
+                        android:textSize="30dp"
+                        android:layout_marginLeft="30dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textColor="#3c00ff"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Year"
+                        android:textColor="#3c00ff"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_ugyear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="4"
+                        android:textColor="#050505"
+
+                        android:textSize="30dp"
+                        android:layout_marginLeft="2dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_ugcourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="4"
+                        android:textColor="#050505"
+                        android:textSize="30dp"
+                        android:layout_marginLeft="8dp"
+                        />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/pg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PG"
+                        android:textColor="#3c00ff"
+                        android:textSize="20dp" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/tv_pgmarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#050505"
+                        android:maxLength="2"
+                        android:textSize="30dp"
+                        android:layout_marginLeft="30dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textColor="#3c00ff"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Year"
+                        android:textColor="#3c00ff"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_pgyear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="4"
+                        android:textColor="#050505"
+
+                        android:textSize="30dp"
+                        android:layout_marginLeft="2dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_pgcourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="4"
+                        android:textColor="#050505"
+
+                        android:textSize="30dp"
+                        android:layout_marginLeft="8dp"
+                        />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Skills"
+                android:textColor="#3c00ff"
+                android:textSize="20dp"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:id="@+id/tv_skills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="top|left"
+                    android:lines="4"
+                    android:maxLines="5"
+                    android:minLines="3"
+                    android:scrollbars="vertical"
+                    android:textColor="#050505"
+                    android:textSize="30dp" />
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Achievements"
+                android:textColor="#3c00ff"
+                android:textSize="20dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:id="@+id/tv_achievement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="top|left"
+                    android:lines="4"
+                    android:maxLines="5"
+                    android:minLines="3"
+                    android:scrollbars="vertical"
+                    android:textColor="#050505"
+                    android:textSize="30dp" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Certifications"
+                android:textColor="#3c00ff"
+                android:textSize="20dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:id="@+id/tv_certification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="top|left"
+                    android:lines="4"
+                    android:maxLines="5"
+                    android:minLines="3"
+                    android:scrollbars="vertical"
+                    android:textColor="#050505"
+                    android:textSize="30dp" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Work Experience"
+                android:textColor="#3c00ff"
+                android:textSize="20dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d0b8b8"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:id="@+id/tv_workexp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="top|left"
+                    android:lines="4"
+                    android:maxLines="5"
+                    android:minLines="3"
+                    android:scrollbars="vertical"
+                    android:textColor="#050505"
+                    android:textSize="30dp" />
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_downcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/buttonstylepink"
+                android:text="Download Cv"
+                android:textColor="#fff"
+                />
+            <Button
+                android:id="@+id/btn_showvideocv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/buttonstylepink"
+                android:text="Show Video Cv"
+                android:textColor="#fff"
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

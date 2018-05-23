@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".ApplyJob">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:text="Apply Job"
+    android:textColor="#fff"
+    android:gravity="center"
+    />
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#d7f463"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/pink"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company : "
+                android:textColor="#050505"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Id : "
+                android:textColor="#050505"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/tv_emailid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Id: "
+                android:textColor="#050505"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/tv_jobid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Type: "
+                android:textColor="#050505"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/tv_jobtype"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Location: "
+                android:textColor="#050505"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interview Date: "
+                android:textColor="#050505"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Description: "
+                android:textColor="#050505"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/tv_jobdescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Qualification: "
+                android:textColor="#050505"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/tv_jobqualification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skills Required: "
+                android:textColor="#050505"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/tv_skills"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Experience: "
+                android:textColor="#050505"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/tv_experience"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salary: "
+                android:textColor="#050505"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/tv_salary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Info: "
+                android:textColor="#050505"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <Button
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/btn_apply"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonstylepink"
+                android:text="Apply Job"
+                android:textColor="#fff"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#b6f00a"
+                android:layout_gravity="bottom"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
