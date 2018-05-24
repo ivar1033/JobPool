@@ -1,5 +1,6 @@
 # JobPool
 An android based job portal app <br />
+For images check the screenshots folder <br />
 It has two app <br />
 1) JobPool for jobseeker<br />
 2) jobPool Corporate for Corporate <br />
